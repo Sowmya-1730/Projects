@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAPT</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    
+    <div class="child1">
+        <center><img src="{{ url_for('static', filename='images_port/download_2.png') }}" alt="Small Image"></center>
+    </div>        
+    
+    <div class="Buttons">
+        <div>
+            <button id="Home" class="button1"><span>HOME</span></button>
+            <button id="descriptionButton" class="button1"><span>DESCRIPTION</span></button>
+            <button id="toolsButton" class="button1"><span>TOOLS</span></button>
+        </div>
+    </div>
+    
+    <div class="main2" id="descriptionContainer" style="display: none;">
+        <div class="child2">
+            <div class="description">
+                <div id="para">
+                    <center><h2>WAPT</h2></center>
+                    <p> Web application penetration testing (web app pentesting) identifies and exploits vulnerabilities in web applications to enhance their security. It simulates attacks to uncover       weaknesses like SQL injection, XSS, and CSRF. The goals are to detect vulnerabilities, evaluate security, ensure regulatory compliance (e.g., PCI-DSS, GDPR), and prevent data breaches. The process includes planning, scanning, exploiting, analyzing impacts, and reporting findings. Tools used are automated scanners (e.g., OWASP ZAP, Burp Suite), manual testing tools, and exploitation frameworks (e.g., Metasploit). Best practices involve regular testing, combining automated and manual methods, prioritizing high-risk areas, staying updated on threats, and collaborating with developers for timely fixes. Regular pentesting and proactive remediation are crucial for maintaining robust security and protecting sensitive data.
+                    </p>
+                    <br>
+                    <center><h2>USES</h2></center>
+                    <p>WAPT toolkit is used to perform a wide range of security tests on web applications, including:</p>
+                    <ul>
+                        <li>SQL Injection Testing</li>
+                        <li>Cross-Site Scripting (XSS) Testing</li>
+                        <li>Cross-Site Request Forgery (CSRF) Testing</li>
+                        <li>Authentication and Authorization Testing</li>
+                        <li>Session Management Testing</li>
+                        <li>Input Validation Testing</li>
+                    </ul>
+                    <br>
+                   <center><h2>ADVANTAGES</h2></center> 
+                    <p>The advantages of using a WAPT toolkit include:</p>
+                    <ul>
+                        <li><strong>Comprehensive Testing:</strong> It provides a wide range of tests that cover various aspects of web security.</li>
+                        <li><strong>Efficiency:</strong> Automates many testing processes, saving time and effort.</li>
+                        <li><strong>Accuracy:</strong> Helps in identifying and exploiting vulnerabilities with precision.</li>
+                        <li><strong>Reporting:</strong> Generates detailed reports that help in understanding the vulnerabilities and their impacts.</li>
+                        <li><strong>Remediation:</strong> Offers guidance on how to fix the identified vulnerabilities.</li>
+                    </ul>
+<br><br>            <br>
+                    <div class="description1">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    
+                                    <div class="content1">
+                                        <h2>What is SQL Injection?</h2>
+                                        <p>
+                                            SQL Injection (SQLi) is a security vulnerability where an attacker manipulates an application's database queries to inject malicious SQL code.
+                                   </p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="content1">
+                                        <p>
+                                            
+                                            <h2>  Effects of SQL injection: </h2>   
+                                            <ul>
+                                                     <li>Access sensitive data</li>
+                                                     <li>Modify database data</li>
+                                                     <li>Bypass authentication</li>
+                                                     <li>Execute administrative operations</li>
+                                            </ul>
+                                       </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                   
+                                    <div class="content1">
+                                        <h2> What is XSS ?</h2>
+                                        <p> Cross-Site Scripting (XSS) is a vulnerability that allows attackers to inject malicious scripts into web pages viewed by others, potentially leading to data theft.                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="content1">
+                                        <p><h2>Effects of XSS :</h2>
+                                        <ul>
+                                            <li>Data theft (e.g., cookies, session tokens)</li>
+                                           <li>Session hijacking</li> 
+                                            <li>Page defacement</li>
+                                            <li>Malware distribution32</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    
+
+                                    <div class="content1">
+                                        <h2>What is CSRF ?</h2>
+                                        <p> It's a type of attack that tricks the user into performing actions they didn’t intend to while they’re authenticated on a website. </p>
+                                    </div>
+
+                                </div>
+                                <div class="flip-card-back">
+                                
+                                    <div class="content1">
+                                        <p><h2>Effects of CSRF:</h2></p>
+                                        <ul>
+                                            <li>Unauthorized Actions</li>
+                                            <li>Data Theft and Exposure</li>
+                                            <li>Privilege Escalation</li>
+                                            <li>Service Disruption</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- Flashcards Container -->
+    <div class="flashcards" id="flashcardsContainer">
+        <div class="flashcard">
+            <center><img src="{{ url_for('static', filename='images_port/sqllogo.png') }}" alt="Small Image"></center>
+            <button class="flashButton">SQL Injection</button>
+        </div>
+        <div class="flashcard">
+           <center><img src="{{ url_for('static', filename='images_port/xsslogo.png') }}" alt="Small Image"></center>
+            <button class="flashButton">XSS</button>
+        </div>
+        <div class="flashcard">
+            <center><img src="{{ url_for('static', filename='images_port/csrflogo.png') }}" alt="Small Image"></center>
+            <button class="flashButton">CSRF</button>
+        </div>
+    </div>
+
+    <!-- Flashcard Content Containers -->
+    <div class="flashcard-content" id="sqlInjectionContent" style="display: none;">
+        <div class="content">
+            <button class="backButton button1"><span>BACK</span></button>
+            <p>SQL Injection is a code injection technique that exploits a security vulnerability occurring in the database layer of an application.</p>
+            <br>
+            <form class="scanForm" id="scanFormSql">
+                <label for="urlSql">URL:</label>
+                <input type="text" id="urlSql" name="url" required><br>
+                <label for="paramSql">Parameter:</label>
+                <input type="text" id="paramSql" name="param" required><br>
+                <label for="scan_typeSql">Scan Type:</label>
+                <select id="scan_typeSql" name="scan_type" required>
+                    <option value="sql_injection">SQL Injection</option>
+                </select><br>
+                <button type="submit">Scan</button>
+            </form>
+            <div class="resultsColumn" id="resultsSql"></div>
+        </div>
+    </div>
+
+    <div class="flashcard-content" id="xssContent" style="display: none;">
+        <div class="content">
+            <button class="backButton button1"><span>BACK</span></button>
+            <p>Cross-Site Scripting (XSS) is a security vulnerability that allows an attacker to inject malicious scripts into content from otherwise trusted websites.</p>
+            <br>
+            <form class="scanForm" id="scanFormXss">
+                <label for="urlXss">URL:</label>
+                <input type="text" id="urlXss" name="url" required><br>
+                <label for="paramXss">Parameter:</label>
+                <input type="text" id="paramXss" name="param" required><br>
+                <label for="scan_typeXss">Scan Type:</label>
+                <select id="scan_typeXss" name="scan_type" required>
+                    <option value="xss">XSS</option>
+                </select><br>
+                <button type="submit">Scan</button>
+            </form>
+            <div class="resultsColumn" id="resultsXss"></div>
+        </div>
+    </div>
+    <div class="flashcard-content" id="csrfContent" style="display: none;">
+        <div class="content">
+            <button class="backButton button1"><span>BACK</span></button>
+            <p>Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they are currently authenticated.</p>
+           <br>
+           <form></form>
+            <form class="scanForm" id="scanFormCsrf">
+                <label for="urlCsrf">URL:</label>
+                <input type="text" id="urlCsrf" name="url" required><br>
+                <label for="paramCsrf">Parameter:</label>
+                <input type="text" id="paramCsrf" name="param" required><br>
+                <label for="scan_typeCsrf">Scan Type:</label>
+                <select id="scan_typeCsrf" name="scan_type" required>
+                    <option value="csrf">CSRF</option>
+                </select><br>
+                <button type="submit">Scan</button>
+            </form>
+            <div class="resultsColumn" id="resultsCsrf"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Page is fully loaded and the background image is fixed.");
+
+            const descriptionButton = document.getElementById('descriptionButton');
+            const toolsButton = document.getElementById('toolsButton');
+            const descriptionContainer = document.getElementById('descriptionContainer');
+            const flashcardsContainer = document.getElementById('flashcardsContainer');
+
+            // Flashcard content containers
+            const sqlInjectionContent = document.getElementById('sqlInjectionContent');
+            const xssContent = document.getElementById('xssContent');
+            const csrfContent = document.getElementById('csrfContent');
+
+            // Back buttons for each content div
+            const backButtons = document.querySelectorAll('.backButton');
+
+            // Elements for animation
+            const descriptionElements = descriptionContainer.querySelectorAll('h2, p, ul');
+
+            // Default to show Home content and hide others
+            const showHome = () => {
+                descriptionContainer.style.display = 'none';
+                flashcardsContainer.style.display = 'none';
+                sqlInjectionContent.style.display = 'none';
+                xssContent.style.display = 'none';
+                csrfContent.style.display = 'none';
+            };
+
+            showHome(); // Call on page load
+
+            document.getElementById('Home').addEventListener('click', function() {
+                showHome();
+                // Optionally, show some home content if needed
+            });
+
+            descriptionButton.addEventListener('click', function() {
+                if (descriptionContainer.style.display === 'none' || descriptionContainer.style.display === '') {
+                    descriptionContainer.style.display = 'block';
+                    flashcardsContainer.style.display = 'none'; // Hide flashcards when description is shown
+                    sqlInjectionContent.style.display = 'none'; // Hide flashcard content when description is shown
+                    xssContent.style.display = 'none';
+                    csrfContent.style.display = 'none';
+                    setTimeout(() => {
+                        descriptionElements.forEach((element, index) => {
+                            setTimeout(() => {
+                                element.classList.add('visible');
+                            }, index * 100); // Delay each element's animation
+                        });
+                    }, 100);
+                } else {
+                    descriptionContainer.style.display = 'none';
+                    descriptionElements.forEach(element => {
+                        element.classList.remove('visible');
+                    });
+                }
+            });
+
+            toolsButton.addEventListener('click', function() {
+                if (flashcardsContainer.style.display === 'none' || flashcardsContainer.style.display === '') {
+                    flashcardsContainer.style.display = 'block';
+                    descriptionContainer.style.display = 'none'; // Hide description when flashcards are shown
+                    sqlInjectionContent.style.display = 'none'; // Hide flashcard content when flashcards are shown
+                    xssContent.style.display = 'none';
+                    csrfContent.style.display = 'none';
+                } else {
+                    flashcardsContainer.style.display = 'none';
+                }
+            });
+
+            const flashButtons = {
+                "SQL Injection": sqlInjectionContent,
+                "XSS": xssContent,
+                "CSRF": csrfContent
+            };
+
+            const flashButtonsNodes = document.querySelectorAll('.flashButton');
+            flashButtonsNodes.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetContent = flashButtons[this.textContent];
+                    if (targetContent.style.display === 'none' || targetContent.style.display === '') {
+                        targetContent.style.display = 'block';
+                        flashcardsContainer.style.display = 'none'; // Hide flashcards when flashcard content is shown
+                        descriptionContainer.style.display = 'none'; // Hide description when flashcard content is shown
+                    } else {
+                        targetContent.style.display = 'none';
+                    }
+                });
+            });
+
+            backButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    flashcardsContainer.style.display = 'block';
+                    sqlInjectionContent.style.display = 'none';
+                    xssContent.style.display = 'none';
+                    csrfContent.style.display = 'none';
+                });
+            });
+
+            // Handle form submissions for SQL Injection
+            document.getElementById('scanFormSql').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const url = document.getElementById('urlSql').value;
+                const param = document.getElementById('paramSql').value;
+                const scan_type = document.getElementById('scan_typeSql').value;
+
+                fetch('/scan', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams({
+                        'url': url,
+                        'param': param,
+                        'scan_type': scan_type
+                    })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('SQL Injection scan results:', data);
+                    const resultsDiv = document.getElementById('resultsSql');
+                    resultsDiv.innerHTML = '';
+                    data.forEach(result => {
+                        const p = document.createElement('p');
+                        p.textContent = result;
+                        resultsDiv.appendChild(p);
+                    });
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                });
+            });
+
+            // Handle form submissions for XSS
+            document.getElementById('scanFormXss').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const url = document.getElementById('urlXss').value;
+                const param = document.getElementById('paramXss').value;
+                const scan_type = document.getElementById('scan_typeXss').value;
+
+                fetch('/scan', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams({
+                        'url': url,
+                        'param': param,
+                        'scan_type': scan_type
+                    })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('XSS scan results:', data);
+                    const resultsDiv = document.getElementById('resultsXss');
+                    resultsDiv.innerHTML = '';
+                    data.forEach(result => {
+                        const p = document.createElement('p');
+                        p.textContent = result;
+                        resultsDiv.appendChild(p);
+                    });
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                });
+            });
+
+            // Handle form submissions for CSRF
+            document.getElementById('scanFormCsrf').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const url = document.getElementById('urlCsrf').value;
+                const param = document.getElementById('paramCsrf').value;
+                const scan_type = document.getElementById('scan_typeCsrf').value;
+
+                fetch('/scan', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams({
+                        'url': url,
+                        'param': param,
+                        'scan_type': scan_type
+                    })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('CSRF scan results:', data);
+                    const resultsDiv = document.getElementById('resultsCsrf');
+                    resultsDiv.innerHTML = '';
+                    data.forEach(result => {
+                        const p = document.createElement('p');
+                        p.textContent = result;
+                        resultsDiv.appendChild(p);
+                    });
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
