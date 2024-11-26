@@ -1,0 +1,197 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Images/registerbg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper
+{
+    border: 2px solid rgba(255,255,255,.2);
+    width: 460px;
+    height: 580px;
+    background:transparent;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    margin-right: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.wrapper h1
+{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-right: 260px;
+}
+.wrapper .name
+{
+    margin:25px 30px;
+    position: relative;
+}
+.name input
+{
+    font-size: 15px;
+    align-content: center;
+}
+.wrapper .name input
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    width: 48%;
+}
+.wrapper .name input::placeholder
+{
+    color: #fff;
+}
+.wrapper .usermail
+{
+    margin: 25px 30px;
+    position: relative;
+}
+.usermail input
+{
+    font-size: 15px;
+    align-content: center;
+}
+.wrapper .usermail input
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    width: 49%;
+}
+.wrapper .usermail input::placeholder
+{
+    color: #fff;
+}
+.wrapper .phoneno
+{
+    margin: 40px 30px;
+    position: relative;
+}
+.phoneno input
+{
+    font-size: 15px;
+    align-content: center;
+}
+.wrapper .phoneno input
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    width: 49%;
+}
+.wrapper .phoneno input::placeholder
+{
+    color: #fff;
+}
+.wrapper .pass {
+    margin: 50px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .pass label {
+    margin-right: 8px; 
+}
+
+.wrapper .pass input {
+    margin: 0;
+}
+
+.wrapper .next
+{
+    margin: -20px 300px ;
+    width: 100%;
+}
+.next button
+{
+    width: 90px;
+    height: 40px;
+    background-color: #04BFAD;
+    margin-top:20px;
+    border-radius: 20px;
+    margin-right: 100px;
+    color: #fff;
+    font-size:15px ;
+    font-weight:bold;
+    cursor: pointer;
+    margin: -5px -10px;
+}
+.next button:hover
+{
+    box-shadow: 0 0 8px #04BFAD;
+}
+.form-container
+{
+    width: 40%;
+}
+#canvas-container
+{
+    width: 40%;
+    margin-top: 70px;
+    display: none;
+    float: right;
+}
+canvas
+{
+    border: 3px solid #000;
+    margin-top: -55px;
+}
+.name input, .pass input
+{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+#submitButton
+{
+    margin-bottom:-60px;
+    width: 60%;
+    height: 35px;
+    margin-left: 195px;
+    border: 2px solid rgba(255,255,255,.2);
+    border-color: #000;
+    background: #04BFAD;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#submitButton:hover
+{
+    box-shadow: 0 0 10px #04BFAD;
+}
+
